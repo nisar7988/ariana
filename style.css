@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: rgb(111, 228, 249);
+    font-family: 'Noto Sans Mono', monospace;
+}
+.songName{
+    font-size: .9rem;
+}
+nav{
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height:65px;
+    background-color: rgb(74, 208, 232);
+    color: white;
+}
+nav ul li{
+    
+    padding:0 12px;
+}
+.brand img{
+    width:44px;
+padding: 0 8px;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.bottom{
+position: sticky;
+height:100px;
+background: #000;
+bottom: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+flex-direction: column;
+
+}
+.container{
+    min-height: 72vh;
+    background-color:black;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    padding: 34px;
+background-image: url("bg1.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+#myProgressBar{
+    cursor: pointer;
+    width: 80vw;
+    text-align: center;
+}
+.icons{
+    margin: 14px 0;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: rgb(0, 0, 0);;
+   
+    border-radius: 30px;
+    margin: 5px;
+}
+.songItem img{
+    width: 43px;
+    margin:0 23px;
+    border-radius:34px;
+}
+.songItem span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timestamp{
+    
+    margin: 0 23px;
+}
+.timestamp{
+    
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 39px;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    bottom: 5vh;
+}
+.songInfo img{
+    width: 44px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+#volume{
+    position: relative;
+    left: 33vw;
+    bottom: 8vh;
+}
+#masterSongName{
+    position: relative;
+
+   
+}
+
+
+
+
+.bottom{
+    background-color: rgb(74, 208, 232);
+}
+
+@media screen and (max-width:950px) {
+     .container{
+   
+        background-image: url("bg3.jpg");
+    }
+ #gif{
+    position: relative;
+    left:22px;
+    bottom:18px;
+ }
+  }
+
+
+  @media screen and (max-width:950px) {
+    #volume input{
+width: 13vw;
+    }
+ }
+ @media screen and (max-width:950px) {
+    #masterSongName{
+        position: relative;
+    left:-77px;
+       
+    }
+ }
+ @media screen and (max-width:600px) {
+    .container{
+
+        background-image: url("bg2.jpg");
+    }
+    .songList{
+        margin-top: 15vh;
+    }
+    .songList h1{
+        position: relative;
+        top: -88px;
+    }
+ }
